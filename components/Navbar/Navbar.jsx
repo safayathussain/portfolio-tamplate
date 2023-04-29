@@ -4,12 +4,11 @@ import { CgMenu } from 'react-icons/cg';
 import { IoMdClose } from 'react-icons/io';
 import Image from 'next/image';
 import Link from 'next/link';
-import { animateScroll as scroll } from 'react-scroll';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
     const navItems = [
-        { title: 'Home', link: '/' },
+        { title: 'Home', link: '/#home' },
         { title: 'About', link: '/#about' },
         { title: 'Skills', link: '/#skills' },
         { title: 'Services', link: '/#services' },
@@ -22,7 +21,7 @@ const Navbar = () => {
             <div className="flex justify-between items-center w-full py-5 z-[9999] container">
                 <div className='flex justify-between items-center w-full'>
                     <div>
-                        <Link href={'/'} className='font-medium text-2xl text-textColor hover:text-primary duration-300'>Zahed Hasan</Link>
+                        <Link scroll={false} href={'/'} className='font-medium text-2xl text-textColor hover:text-primary duration-300'>Zahed Hasan</Link>
                     </div>
                     <div className='flex justify-center'>
                         <div className={`shadow-lg md:shadow-none bg-white rounded-b-2xl border-b-2 md:border-0 border-b-primary absolute md:static duration-300 flex left-0 w-full py-5 md:py-0 justify-center z-[999] ${open ? 'top-0' : 'top-[-340px]'}`}>

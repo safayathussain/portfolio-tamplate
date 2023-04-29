@@ -11,7 +11,7 @@ const Sidebar = () => {
     {icon: <TbBrandFiverr/> , link: '/'},
   ]
   return (
-    <div className='absolute left-0 flex flex-col gap-8'>
+    <div className='absolute left-0 flex flex-col gap-8 mt-48'>
       {
         items.map((item, index) => <Link key={index} target='_blank' href={item.link} className='text-3xl text-primary hover:scale-125 duration-300'>{item.icon}</Link>)
       }

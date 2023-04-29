@@ -17,7 +17,7 @@ const typeBasedClasses = (type) => {
 const LinkButton = ({ type, className, children, href}) => {
     
     return (
-        <Link href={href} className={`${typeBasedClasses(type)} ${className} w-max`}>
+        <Link scroll={false} href={href} className={`${typeBasedClasses(type)} ${className} w-max`}>
             {children}
         </Link>
     )

@@ -7,10 +7,10 @@ import LinkButton from '../LinkButton/LinkButton';
 
 const Hero = () => {
     return (
-        <div className='relative mt-48'>
+        <div className='relative' id='home'>
             <Sidebar />
             <div>
-                <div className='ml-20'>
+                <div className='ml-20 mt-48'>
                     <h1 className='text-4xl font-bold text-textColor'>Hi, I'am Zahed Hasan</h1>
                     <p className='text-primary mt-3'>Backend developer</p>
                     <br />

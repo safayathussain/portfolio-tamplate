@@ -13,9 +13,9 @@ const Footer = () => {
                         <p className='text-white py-1'>Backend developer</p>
                     </div>
                     <div className='flex gap-3 md:gap-8 flex-col sm:flex-row'>
-                        <Link href={'/#services'} className='text-white hover:text-[1.1rem] duration-300'>Services</Link>
-                        <Link href={'/#portfolio'} className='text-white hover:text-[1.1rem] duration-300'>Portfolio</Link>
-                        <Link href={'/#contact'} className='text-white hover:text-[1.1rem] duration-300'>Contact me</Link>
+                        <Link scroll={false} href={'/#services'} className='text-white hover:text-[1.1rem] duration-300'>Services</Link>
+                        <Link scroll={false} href={'/#portfolio'} className='text-white hover:text-[1.1rem] duration-300'>Portfolio</Link>
+                        <Link scroll={false} href={'/#contact'} className='text-white hover:text-[1.1rem] duration-300'>Contact me</Link>
                     </div>
                     <div className='flex gap-3'>
                         <Link href={''} className='text-white text-2xl hover:text-3xl duration-300'><FaFacebook /></Link>
